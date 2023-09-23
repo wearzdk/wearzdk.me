@@ -18,11 +18,15 @@ jobs:
       - name: Run build 🏗️
         run: pnpm build
 
-      - name: Save Artifact 📦
-        uses: actions/upload-artifact@v3
+      - name: Fix permissions
+        run: |
+          chmod -c -R +rX "_site/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: dist
-          path: ./dist
+          path: dist
 
   # Deploy job
   deploy:
@@ -35,16 +39,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Download Artifact 📦
-        uses: actions/download-artifact@v3
-        with:
-          name: dist
-          path: ./dist
-      - name: Pack
-        run: tar -czvf dist.tar.gz dist
       - name: Deploy 🚀
         uses: actions/deploy-pages@v2
         id: deployment
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: dist.tar.gz

@@ -1,0 +1,23 @@
+/rss https://wearzdk.me/feed.xml 301
+/blog https://wearzdk.me/posts 301
+
+/github https://github.com/wearzdk 301
+/gh https://github.com/wearzdk 301
+
+/blog	https://github.com/wearzdk/blog	302
+/content-script-vue	https://github.com/wearzdk/content-script-vue	302
+/easy-cd-action	https://github.com/wearzdk/easy-cd-action	302
+/gin-mini-starter	https://github.com/wearzdk/gin-mini-starter	302
+/github-slideshow	https://github.com/wearzdk/github-slideshow	302
+/library-sys-go	https://github.com/wearzdk/library-sys-go	302
+/macaoapply-auto	https://github.com/wearzdk/macaoapply-auto	302
+/macaoapply-auto-webui	https://github.com/wearzdk/macaoapply-auto-webui	302
+/mastergo-linux-font-helper	https://github.com/wearzdk/mastergo-linux-font-helper	302
+/middle-button-no-paste	https://github.com/wearzdk/middle-button-no-paste	302
+/qlu-el-bgs	https://github.com/wearzdk/qlu-el-bgs	302
+/qlu-el-search	https://github.com/wearzdk/qlu-el-search	302
+/qlu-lib-reservation-go	https://github.com/wearzdk/qlu-lib-reservation-go	302
+/readme-stats	https://github.com/wearzdk/readme-stats	302
+/short-time-proxy-go	https://github.com/wearzdk/short-time-proxy-go	302
+/vue3-mini-starter	https://github.com/wearzdk/vue3-mini-starter	302
+/wxbcnm	https://github.com/wearzdk/wxbcnm	302

@@ -1,0 +1,15 @@
+{
+  "extends": ["@antfu", "@unocss"],
+  "rules": {
+    "vue/no-v-text-v-html-on-component": "off",
+    "no-console": "off"
+  },
+  "ignorePatterns": [
+    "dist",
+    "scripts",
+    "node_modules",
+    "_redirects",
+    "_dist_redirects",
+    "index.html"
+  ]
+}
